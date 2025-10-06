@@ -1,0 +1,169 @@
+.books-wrap {
+  padding: 32px 0;
+  background: #cef9f2;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.books-wrap {
+  --ultra-violet: #655a7c;
+  --african-violet: #ab92bf;
+  --stroke: #aaa9a7;
+  --card-bg: #655a7c;
+  --radius: 12px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --text: #655a7c;
+}
+
+.books-wrap .MuiDataGrid-columnHeader {
+  color: #655a7c !important;
+  font-weight: 600 !important;
+}
+
+.books-wrap .MuiDataGrid-footerContainer {
+  background: var(--card-bg) !important;
+  color: #fff !important;
+}
+
+.books-wrap .MuiDataGrid-footerContainer .MuiTablePagination-root,
+.books-wrap .MuiDataGrid-footerContainer .MuiTablePagination-root * {
+  color: #fff !important;
+}
+
+.books-wrap .dg-card {
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.books-wrap .MuiDataGrid-root {
+  border: 0 !important;
+  color: var(--text);
+  font-size: 14px;
+}
+
+.books-wrap .MuiDataGrid-columnHeaders {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--stroke) !important;
+}
+
+.books-wrap .MuiDataGrid-columnHeader {
+  font-weight: 700;
+  color: var(--ultra-violet);
+}
+
+.books-wrap .MuiDataGrid-cell {
+  border-bottom: 1px solid var(--stroke) !important;
+  color: var(--text);
+}
+
+.books-wrap .MuiDataGrid-row:hover {
+  background: #f7f7fb;
+}
+
+.books-wrap .MuiDataGrid-toolbarContainer {
+  padding: 8px;
+  gap: 8px;
+  border-bottom: 1px solid var(--stroke);
+  background: var(--card-bg);
+}
+
+.books-wrap .MuiDataGrid-toolbarContainer .MuiInputBase-root {
+  padding: 0 8px;
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.books-wrap .MuiDataGrid-toolbarContainer .MuiInputBase-input {
+  padding: 10px 6px;
+}
+
+.books-wrap .MuiDataGrid-footerContainer {
+  border-top: 1px solid var(--stroke);
+  background: var(--card-bg);
+}
+
+.books-wrap .MuiDataGrid-root .MuiButton-root {
+  text-transform: none;
+  border-radius: 10px;
+  padding: 4px 10px;
+  color: var(--ultra-violet);
+  border: 1px solid var(--ultra-violet);
+}
+
+.books-wrap .MuiDataGrid-root .MuiButton-root:hover {
+  background: var(--african-violet);
+  color: #fff;
+  border-color: var(--african-violet);
+}
+
+.books-wrap .custom-add-btn {
+  background-color: var(--ultra-violet);
+  color: #fff;
+  border-radius: 12px;
+  text-transform: none;
+  padding: 8px 18px;
+  font-weight: 600;
+  border: 1px solid var(--ultra-violet);
+}
+
+.books-wrap .custom-add-btn:hover {
+  background-color: var(--african-violet);
+  border-color: var(--african-violet);
+  color: #fff;
+}
+
+.books-wrap .MuiDialog-paper {
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow);
+  background-color: var(--card-bg) !important;
+  color: var(--ultra-violet) !important;
+}
+
+.books-wrap .MuiTextField-root .MuiInputBase-root,
+.books-wrap .MuiFormControl-root .MuiInputBase-root {
+  border-radius: 12px !important;
+  border: 1px solid var(--stroke) !important;
+  background-color: #fff !important;
+  color: var(--ultra-violet) !important;
+}
+
+.books-wrap .MuiInputLabel-root {
+  color: var(--ultra-violet) !important;
+  font-weight: 600;
+}
+
+.books-wrap .MuiInputBase-input {
+  color: var(--ultra-violet) !important;
+  padding: 12px !important;
+}
+
+.books-wrap .dialog-btn.save,
+.books-wrap .dialog-btn.cancel {
+  background-color: var(--ultra-violet) !important;
+  color: #fff !important;
+  border: 1px solid var(--ultra-violet) !important;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 600;
+  padding: 8px 16px !important;
+}
+
+.books-wrap .dialog-btn.save:hover,
+.books-wrap .dialog-btn.cancel:hover {
+  background-color: var(--african-violet) !important;
+  border-color: var(--african-violet) !important;
+}
+
+@media (max-width: 720px) {
+  .books-wrap .MuiDataGrid-root {
+    font-size: 13px;
+  }
+
+  .books-wrap .MuiDataGrid-toolbarContainer .MuiInputBase-input {
+    padding: 8px 6px;
+  }
+}

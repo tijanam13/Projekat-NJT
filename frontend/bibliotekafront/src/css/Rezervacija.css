@@ -1,0 +1,306 @@
+.rezervacija-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.rezervacija-container h1 {
+  text-align: center;
+  color: #655a7c;
+  margin-bottom: 2rem;
+}
+
+.knjige-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.knjiga-item {
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.knjiga-info h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: #ab92bf;
+}
+
+.knjiga-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+.knjiga-akcija {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.knjiga-akcija input[type="number"] {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #ab92bf;
+  background-color: #ab92bfff;
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  box-shadow: none;
+}
+
+.knjiga-akcija input[type="number"]:focus {
+  border-color: #655a7c;
+  box-shadow: 0 0 5px #655a7c;
+}
+
+.knjiga-akcija input[type="number"]::-webkit-inner-spin-button,
+.knjiga-akcija input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: #ab92bfff;
+  width: 20px;
+  height: 100%;
+}
+
+.knjiga-akcija input[type="number"]::-moz-inner-spin-button,
+.knjiga-akcija input[type="number"]::-moz-outer-spin-button {
+  -moz-appearance: none;
+}
+
+.knjiga-akcija input[type="number"]:hover::-webkit-inner-spin-button,
+.knjiga-akcija input[type="number"]:hover::-webkit-outer-spin-button {
+  background-color: #655a7c;
+}
+
+.knjiga-akcija button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #655a7c;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.knjiga-akcija button:hover {
+  background-color: #ab92bf;
+}
+
+.rezervisano {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.korpa-preview {
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 2px solid #655a7c;
+}
+
+.korpa-preview h2 {
+  margin-bottom: 1rem;
+  color: #655a7c;
+}
+
+.korpa-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #afc1d6ff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  align-self: center;
+  border-radius: 8px;
+}
+
+.modal h2 {
+  color: #655a7c;
+  text-align: center;
+}
+
+.modal p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.modal .opis {
+  max-height: 60px;
+  overflow-y: hidden;
+  padding: 5px;
+  background-color: #ab92bfff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: max-height 0.3s;
+}
+
+.modal .opis.prikazi {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #655a7c #ab92bfff;
+}
+
+.modal .opis.prikazi::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal .opis.prikazi::-webkit-scrollbar-track {
+  background: #ab92bfff;
+  border-radius: 4px;
+}
+
+.modal .opis.prikazi::-webkit-scrollbar-thumb {
+  background-color: #655a7c;
+  border-radius: 4px;
+  border: 2px solid #ab92bfff;
+}
+
+.modal .opis.prikazi::-webkit-scrollbar-thumb:hover {
+  background-color: #ab92bf;
+}
+
+.modal .dugmad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modal .dugmad-left {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.modal .dugmad-left input[type="number"] {
+  width: 80px;
+}
+
+.modal .dugmad-left button {
+  min-width: 100px;
+}
+
+.modal .dugmad-right {
+  text-align: right;
+}
+
+.knjiga-item div:hover .hover-overlay {
+  opacity: 1;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(101, 90, 124, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.filter-container {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-item label {
+  margin-bottom: 0.3rem;
+  color: #655a7c;
+  font-weight: bold;
+}
+
+.filter-item select {
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: 2px solid #655a7c;
+  background-color: #ab92bfff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-item select:hover {
+  border-color: #4a3f6e;
+}
+
+.filter-button {
+  background-color: #655a7c !important;
+  color: #fff !important;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  height: 38px;
+  align-self: flex-end;
+}
+
+.filter-button:hover {
+  background-color: #ab92bf !important;
+}
+
+.nema-knjiga {
+  color: #655a7c;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}

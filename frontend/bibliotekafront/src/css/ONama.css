@@ -1,0 +1,82 @@
+:root {
+  --ultra-violet: #655a7cff;
+  --african-violet: #ab92bfff;
+  --powder-blue: #afc1d6ff;
+  --mint-green: #cef9f2ff;
+  --silver: #AAA9A7ff;
+}
+
+.onama-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--powder-blue), var(--mint-green));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.onama-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--mint-green);
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.onama-container h1 {
+  text-align: center;
+  color: var(--african-violet);
+  font-size: 3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.onama-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.onama-text {
+  flex: 1 1 50%;
+  color: var(--ultra-violet);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.onama-text p {
+  margin-bottom: 1rem;
+}
+
+.onama-image {
+  flex: 1 1 45%;
+}
+
+.onama-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .onama-content {
+    flex-direction: column-reverse;
+  }
+
+  .onama-image,
+  .onama-text {
+    flex: 1 1 100%;
+  }
+
+  .onama-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .onama-text {
+    font-size: 1.2rem;
+  }
+}

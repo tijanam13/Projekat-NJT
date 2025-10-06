@@ -1,0 +1,165 @@
+.pregled-rezervacija {
+  --ultra-violet: #655a7cff;
+  --african-violet: #ab92bfff;
+  --powder-blue: #afc1d6ff;
+  --mint-green: #cef9f2ff;
+  --silver: #AAA9A7ff;
+
+
+  font-family: Arial, sans-serif;
+  background-color: var(--mint-green);
+  color: var(--ultra-violet);
+  padding: 20px;
+}
+
+.pregled-rezervacija h1,
+.pregled-rezervacija h2,
+.pregled-rezervacija h3 {
+  color: var(--ultra-violet);
+}
+
+.pregled-rezervacija table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: var(--african-violet);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pregled-rezervacija th,
+.pregled-rezervacija td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--silver);
+  color: #fff;
+}
+
+.pregled-rezervacija th {
+  background-color: var(--ultra-violet);
+  font-weight: bold;
+}
+
+.pregled-rezervacija tr:hover {
+  background-color: var(--powder-blue);
+  color: var(--ultra-violet);
+}
+
+.pregled-rezervacija button,
+.pregled-rezervacija .MuiButton-root {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.pregled-rezervacija button:hover,
+.pregled-rezervacija .MuiButton-root:hover {
+  opacity: 0.8;
+}
+
+.pregled-rezervacija button:disabled,
+.pregled-rezervacija .MuiButton-root:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pregled-rezervacija .korpa-preview {
+  background-color: var(--african-violet);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.pregled-rezervacija .korpa-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--silver);
+}
+
+.pregled-rezervacija .modal-form {
+  background-color: var(--powder-blue);
+  color: var(--ultra-violet);
+  padding: 20px;
+  border-radius: 15px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pregled-rezervacija .modal-form table {
+  background-color: var(--african-violet);
+}
+
+.pregled-rezervacija .modal-form th,
+.pregled-rezervacija .modal-form td {
+  color: #fff;
+}
+
+.pregled-rezervacija .modal-form h3 {
+  margin-top: 0;
+  color: var(--ultra-violet);
+}
+
+.pregled-rezervacija .filter-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.pregled-rezervacija .filter-item label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pregled-rezervacija .filter-item select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--ultra-violet);
+  background-color: var(--mint-green);
+  color: var(--ultra-violet);
+}
+
+.pregled-rezervacija .rezervacija-container {
+  padding: 20px;
+}
+
+.pregled-rezervacija .MuiButton-root {
+  background-color: var(--ultra-violet);
+  color: #fff;
+}
+
+.pregled-rezervacija .MuiButton-root:hover {
+  background-color: #4a3f6e;
+}
+
+.pregled-rezervacija p {
+  margin: 5px 0;
+}
+
+.scroll-table {
+  overflow-x: auto;
+}
+
+.scroll-table::-webkit-scrollbar {
+  height: 10px;
+}
+
+.scroll-table::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.scroll-table::-webkit-scrollbar-thumb {
+  background-color: #8e44ad;
+  border-radius: 5px;
+}
+
+.scroll-table {
+  scrollbar-width: thin;
+  scrollbar-color: #8e44ad #f0f0f0;
+}
